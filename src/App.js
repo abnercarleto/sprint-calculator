@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
-import { Container, Row, Col } from 'react-grid-system';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import SprintComponent from './sprint/sprint-component.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Test</h1>
-        <Container>
-          <Row>
-            <Col sm={5}>
-              test
-            </Col>
-            <Col sm={5}>
-              Test 2
-            </Col>
-            <Col>
-              Test 3
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <MuiThemeProvider>
+        <SprintComponent />
+      </MuiThemeProvider>
     );
   }
 }
